@@ -1,8 +1,13 @@
 # Python Calculator
+"""
+I made this while learning Python. I felt that creating a menu
+would properly introduce me to functions and variables. 
+"""
+
 import os
 
 def menu():
-	os.system('cls'); os.system('clear')
+	os.system('cls') and os.system('clear')
 	cool()
 	print ("Python Calculator")
 	print ("Type add/sub/div/mul for self-explanatory functions.")
@@ -26,7 +31,7 @@ def pause():
 			break
 		else:
 			menu()
-			print ("Invalid selection.") # This doesn't print.
+			print ("Invalid selection.") # This doesn't print. Might be fixed in a future revision.
 			break
 
 def pause2():
@@ -70,4 +75,3 @@ def mul():
 	pause2()
 
 menu()
-
