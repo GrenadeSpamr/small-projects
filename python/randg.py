@@ -3,17 +3,17 @@
 import random
 import time
 
-def rthres():
-	thresgen = [' ']
-	thresg = random.randrange(1,400)
-	thresgen.append(thresg)
-
 def randg():
-	rand = random.randrange(1,400)
-	rthreshold = random.choice(thresgen[''])
-	print (rand, '>', rthreshold)
+	rand = random.randint(1, 20)
+	rthreshold = 10
+	if rand > rthreshold:
+		print (rand, 'was greater than', rthreshold)
+	else:
+		print (rand, 'was less than', rthreshold)
+	time.sleep(1)
+	randg()
 
-rthres()
 randg()
 
 # An experimental idea, don't expect anything
+# Might use this for an RPG in the future
