@@ -1,2 +1,2 @@
-# summer-projects
-Some projects I made during summer.
+# small-projects
+Some projects I made while learning.
