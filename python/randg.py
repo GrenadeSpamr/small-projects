@@ -8,6 +8,8 @@ def randg():
 	rthreshold = 10
 	if rand > rthreshold:
 		print (rand, 'was greater than', rthreshold)
+	elif rand == rthreshold:
+		print (rand, 'was equal to', rthreshold)
 	else:
 		print (rand, 'was less than', rthreshold)
 	time.sleep(1)
