@@ -1,0 +1,8 @@
+REM Small Windows startup script for disconnecting and reconnecting to a wireless network
+
+echo off
+color 9f
+call netsh wlan disconnect
+timeout /t 5 /nobreak >nul
+call netsh wlan connect "NETWORKNAME"
+exit
